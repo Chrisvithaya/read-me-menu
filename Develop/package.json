@@ -11,5 +11,5 @@
     "inquirer": "^8.2.4"
   },
   "keywords": [],
-  "description": ""
+  "description": "Command line application to generate README "
 }

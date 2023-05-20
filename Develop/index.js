@@ -2,7 +2,7 @@
 
 // TODO: Create an array of questions for user input
 const inquirer = require('inquirer');
-
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const questions = [
     {
       type: 'input',
@@ -45,18 +45,18 @@ const questions = [
     },
 ];
 
-function runQuery(){
-    return inquirer.createPromptModule(questions)
-    .then((answers)=> {
-        console.log(answers)
-        return answers
-    })
-    .catch((error)=>{
-        console.log(error)
-    })
-}
+// function runQuery(){
+//     return inquirer.createPromptModule(questions)
+//     .then((answers)=> {
+//         console.log(answers)
+//         return answers
+//     })
+//     .catch((error)=>{
+//         console.log(error)
+//     })
+// }
 
-runQuery()
+// runQuery()
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
